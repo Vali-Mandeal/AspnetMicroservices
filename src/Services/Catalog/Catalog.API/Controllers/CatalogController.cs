@@ -73,7 +73,7 @@ namespace Catalog.API.Controllers
         }
 
 
-        [HttpGet("{id:length(24)}", Name = "DeleteProduct")]
+        [HttpDelete("{id:length(24)}", Name = "DeleteProduct")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Product))]
         public async Task<IActionResult> Delete(string id)
         {
